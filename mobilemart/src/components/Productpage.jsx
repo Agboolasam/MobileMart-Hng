@@ -19,8 +19,12 @@ function Products() {
                         <input type="text" data-testid="inputForSearch" placeholder="Search Product" />
                     </div>
                     <NavLink to={"./cart"}>
-                        <CartIcon data-testid="cartButton" id="CartIcon" />
-                        <div id="cartItemNo">3</div>
+                        <div id="CartIcon">
+                            <CartIcon data-testid="cartButton" />
+                            <span id="cartItemNo">3
+                            </span>
+                        </div>
+
                     </NavLink>
                 </aside>
             </nav>
@@ -39,7 +43,7 @@ function Products() {
             </div>
             <ProductSection />
             <Footer />
-        </div>
+        </div >
     )
 
 
