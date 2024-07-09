@@ -2,9 +2,17 @@ import React from "react";
 import { MobileMart, CartIcon, SearchIcon } from "../assets/svgs"
 import { NavLink } from "react-router-dom";
 import ProductSection from "./Productcard";
-import Iphone from "../assets/images/iphoneads1.png"
+import Iphone from "../assets/images/iphoneads1.png";
 import Footer from "./Footer";
+import { useState } from "react";
+
 function Products() {
+
+    const [count, setCount] = useState(0)
+    function setCountFn(newCount) {
+        setCount(newCount)
+    }
+
     return (
         <div id="landing">
             <nav>
@@ -21,7 +29,7 @@ function Products() {
                     <NavLink to={"./cart"}>
                         <div id="CartIcon">
                             <CartIcon data-testid="cartButton" />
-                            <span id="cartItemNo">3
+                            <span id="cartItemNo">{count}
                             </span>
                         </div>
 
@@ -32,7 +40,8 @@ function Products() {
                 <div id="aside">
                     <h4>Iphone 13</h4>
                     <h1>
-                        Incredible Camera & Storage
+                        Incredible Camera
+                        <br /> & Storage
                     </h1>
 
                     <button id="buynowBtn"> Buy Now</button>
@@ -41,7 +50,7 @@ function Products() {
                 </div>
                 <img src={Iphone} alt="iphone13" />
             </div>
-            <ProductSection />
+            <ProductSection function={setCountFn} />
             <Footer />
         </div >
     )

@@ -88,4 +88,22 @@ const Checkout1 = () => {
     )
 }
 
-export { MobileMart, SearchIcon, CartIcon, PlusIcon, VisaIcon, MastercardIcon, Checkout1 };
+const Delete = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+            <path d="M14 15.75H50" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18.5 22.5L22.3282 43.555C22.7172 45.6948 24.5808 47.25 26.7556 47.25H37.2443C39.4192 47.25 41.2828 45.6946 41.6718 43.555L45.5 22.5" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25.25 11.25C25.25 8.76472 27.2647 6.75 29.75 6.75H34.25C36.7353 6.75 38.75 8.76472 38.75 11.25V15.75H25.25V11.25Z" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    )
+}
+
+const BackArrow = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 44 44" fill="none">
+            <path d="M30.25 5.5L13.75 22L30.25 38.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    )
+}
+
+export { MobileMart, SearchIcon, CartIcon, PlusIcon, VisaIcon, MastercardIcon, Checkout1, Delete, BackArrow };

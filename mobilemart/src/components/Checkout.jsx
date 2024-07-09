@@ -20,7 +20,7 @@ function Checkout() {
                     </span>
 
                     <span>
-                        <span style={{ width: 55, height: 55, borderRadius: 100 }}>3</span>
+                        <span style={{ width: 55, height: 55, borderRadius: 100, background: "black" }}>3</span>
                         Shipping
                     </span>
 

@@ -27,7 +27,7 @@ function Footer() {
             <div id="FooterLayer">
                 <div style={{ display: "flex", justifyContent: "flex-start", flexDirection: "column", textAlign: "left" }}>
                     <span>Copyright <span style={{ color: "rgba(255, 0, 0, 1) " }}>TechMart systems Limited </span> 2024 All Rights Reserved</span>
-                    <div >
+                    <div id="footersvg" >
                         <VisaIcon />
                         <MastercardIcon />
                     </div>
